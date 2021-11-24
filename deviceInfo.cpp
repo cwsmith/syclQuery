@@ -13,6 +13,7 @@ int main(int, char**) {
   auto& dev = device;
   PRINT_DEVICE_PROPERTY(dev, name);
   PRINT_DEVICE_PROPERTY(dev, vendor);
+  PRINT_DEVICE_PROPERTY(dev, vendor_id);
   PRINT_DEVICE_PROPERTY(dev, driver_version);
   PRINT_DEVICE_PROPERTY(dev, profile);
   PRINT_DEVICE_PROPERTY(dev, version);
@@ -32,5 +33,35 @@ int main(int, char**) {
   PRINT_DEVICE_PROPERTY(dev, global_mem_cache_line_size);
   PRINT_DEVICE_PROPERTY(dev, global_mem_cache_size);
   PRINT_DEVICE_PROPERTY(dev, global_mem_size);
+
+  PRINT_DEVICE_PROPERTY(dev,max_work_group_size);
+  PRINT_DEVICE_PROPERTY(dev,max_clock_frequency);
+  PRINT_DEVICE_PROPERTY(dev,address_bits);
+  PRINT_DEVICE_PROPERTY(dev,max_mem_alloc_size);
+  PRINT_DEVICE_PROPERTY(dev,image_support);
+  PRINT_DEVICE_PROPERTY(dev,max_read_image_args);
+  PRINT_DEVICE_PROPERTY(dev,max_write_image_args);
+  PRINT_DEVICE_PROPERTY(dev,image2d_max_height);
+  PRINT_DEVICE_PROPERTY(dev,image2d_max_width);
+  PRINT_DEVICE_PROPERTY(dev,image3d_max_height);
+  PRINT_DEVICE_PROPERTY(dev,image3d_max_width);
+  PRINT_DEVICE_PROPERTY(dev,image3d_max_depth);
+  PRINT_DEVICE_PROPERTY(dev,image_max_buffer_size);
+  PRINT_DEVICE_PROPERTY(dev,image_max_array_size);
+  PRINT_DEVICE_PROPERTY(dev,max_samplers);
+  PRINT_DEVICE_PROPERTY(dev,max_parameter_size);
+  PRINT_DEVICE_PROPERTY(dev,mem_base_addr_align);
+  PRINT_DEVICE_PROPERTY(dev,error_correction_support);
+  PRINT_DEVICE_PROPERTY(dev,host_unified_memory);
+  PRINT_DEVICE_PROPERTY(dev,profiling_timer_resolution);
+  PRINT_DEVICE_PROPERTY(dev,is_endian_little);
+  PRINT_DEVICE_PROPERTY(dev,is_available);
+  PRINT_DEVICE_PROPERTY(dev,is_compiler_available);
+  PRINT_DEVICE_PROPERTY(dev,is_linker_available);
+  PRINT_DEVICE_PROPERTY(dev,queue_profiling);
+  PRINT_DEVICE_PROPERTY(dev,printf_buffer_size);
+  PRINT_DEVICE_PROPERTY(dev,preferred_interop_user_sync);
+  PRINT_DEVICE_PROPERTY(dev,partition_max_sub_devices);
+  PRINT_DEVICE_PROPERTY(dev,reference_count);
   return 0;
 }
